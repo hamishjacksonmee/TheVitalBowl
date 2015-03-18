@@ -1,0 +1,31 @@
+
+// Global styles
+
+body {
+	font-family: 'Source Sans Pro', helvetica, sans-serif;
+}
+
+a:hover, a:active, a:focus {
+	outline: 0;
+}
+
+.site-wrap {
+	position: relative;
+	@include trans(1.5s);
+	//@include transform(translate3d(0,100%,0));
+	&.entered {
+		//@include transform(translate3d(0,0,0));
+	}
+}
+
+.fullpage-wrapper {
+	padding-right: 90px;
+	@include border-box;
+	//margin-top: 100%;
+}
+
+.inner-wrap {
+	background-color: white;
+	width: 100%;
+}
+

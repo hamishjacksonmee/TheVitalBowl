@@ -1,0 +1,68 @@
+
+// Navigation styles
+
+.right-nav {
+	position: fixed;
+	right: 30px;
+	top: 50%;
+	z-index: 99;
+	margin-top: -170px;
+}
+
+.verticalText {
+	position: absolute;
+	@include transform(rotate(90deg));
+	@include transform-origin(top left);
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    line-height: 1.6;
+    white-space: nowrap;
+
+    a {
+    	font-weight: bold;
+    	padding: 0.4em;
+    	text-decoration: none;
+    	color: black;
+    	@include trans(200ms);
+    	&:hover {
+    		color: #229eb2;
+    	}
+    }
+
+    span {
+    	padding: 0.3em 0 0.1em 0;
+    	//@include trans(1s);
+
+    	&.active {
+			border: 1px black solid;
+			a:hover {
+				color: black;
+			}
+		}
+    }
+    
+}
+
+.nav-info {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 120px;
+	top: 0;
+}
+.nav-text-the {
+	font-size: 0.8em;
+	margin-right: 1em;
+	font-weight: lighter;
+	color: gray;
+}
+.nav-text-bowl {
+	font-size: 0.8em;
+	margin-left: 1em;
+	font-weight: lighter;
+	color: gray;
+}
+
+

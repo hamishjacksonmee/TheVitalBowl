@@ -1,0 +1,33 @@
+.preloader {
+	width: 100%;
+	display: block;
+	//overflow: hidden;
+	overflow-y: scroll;
+	position: fixed;
+	left: 0; 
+	top: 0; 
+	z-index: 999;
+	//@include trans(2s);
+	@include cubic-trans(1.5s);
+	background: #229eb2 url('../img/logo-white.svg') no-repeat center center;
+	background-size: 200px;
+	&.entered {
+        @include transform(translate3d(0,-100%,0));
+	}
+}
+.loader-wrap {
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	width: 100px;
+	margin-left: -50px;
+	z-index: 6;
+}
+.enter-site-button {
+	color: #fff;
+	font-size: 2em;
+}
+.scroll-catch {
+	width: 100%;
+	display: block;
+}
