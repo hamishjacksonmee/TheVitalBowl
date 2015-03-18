@@ -6,19 +6,6 @@ $(document).ready(function(){
 
 	$('.enter-site-button').click(enterSite);
 
-	
-		// $('.preloader').bind('mousewheel DOMMouseScroll', function (e) {
-		//     var delta = (e.originalEvent.wheelDelta || -e.originalEvent.detail);
-		//     if (delta < 0) {
-		//         console.log('You scrolled down');
-		//         enterSite();
-		//     } else if (delta > 0) {
-		//         console.log('You scrolled up');
-		//     }
-		// });
-	// $('.preloader').scroll( function() {
-	// 	enterSite();
-	// });
 	$( '.preloader' ).scroll(function() {
 
 		var elem = $("#preloader");
@@ -28,15 +15,11 @@ $(document).ready(function(){
 			
 	});
 
-	
 
 	// Init Functions
 
 	setHeight();
-
-	//$(window).load(function(){
 	fullPageInit();
-	//});
 
 });
 
@@ -55,8 +38,11 @@ function startLoader() {
 	    
     	setTimeout(function() {
 	        $('.preloader').addClass('loaded');
+	        preloaderScroll();
+
 	    	console.log("loaded");
-    	}, 1500);
+
+    	}, 2500);
         
     });
 
@@ -64,6 +50,14 @@ function startLoader() {
 
 };
 
+function preloaderScroll() {
+	var elem = $('.scroll-catch');
+	var initHeight = elem.height();
+
+	elem.css('height', initHeight * 1.1);
+	console.log('Scroll-catch H');
+	
+};
 
 
 // ----- Window Height Objects
@@ -75,12 +69,18 @@ function setHeight() {
     $('.full-height').css('height', windowHeight);
     $('.min-full-height').css('min-height', windowHeight);
 
-    $('.scroll-catch').css('height', windowHeight + 50);
-
 };
   
 $(window).resize(function() {
     setHeight();
+
+
+    // ======================================= not working ========
+
+    if( $('.scroll-catch').height > 1 ) {
+    	preloaderScroll();
+    };
+    
 });
 
 

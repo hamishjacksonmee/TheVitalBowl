@@ -259,11 +259,11 @@ a:hover, a:active, a:focus {
 
 .site-wrap {
   position: relative;
-  -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  -o-transition: all 1.5s ease;
-  -ms-transition: all 1.5s ease;
-  transition: all 1.5s ease; }
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  transition: all 200ms ease; }
 
 .fullpage-wrapper {
   padding-right: 90px;

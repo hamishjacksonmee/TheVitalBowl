@@ -11,7 +11,7 @@ a:hover, a:active, a:focus {
 
 .site-wrap {
 	position: relative;
-	@include trans(1.5s);
+	@include trans(200ms);
 	//@include transform(translate3d(0,100%,0));
 	&.entered {
 		//@include transform(translate3d(0,0,0));
