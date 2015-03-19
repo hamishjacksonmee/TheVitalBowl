@@ -28,7 +28,6 @@ $(document).ready(function(){
 
 function startLoader() {
 
-    // Images will not begin downloading until we tell the loader to start. 
     var loader = new PxLoader(), 
         backgroundImg = loader.addImage('img/assasin.jpg'), 
         backgroundImgTwo = loader.addImage('img/city.jpg');
@@ -36,13 +35,13 @@ function startLoader() {
     // callback that will be run once images are ready 
     loader.addCompletionListener(function() { 
 	    
-    	setTimeout(function() {
+    	//setTimeout(function() {
 	        $('.preloader').addClass('loaded');
 	        preloaderScroll();
 
 	    	console.log("loaded");
 
-    	}, 2500);
+    	//}, 2500);
         
     });
 
@@ -55,7 +54,7 @@ function preloaderScroll() {
 	var initHeight = elem.height();
 
 	elem.css('height', initHeight * 1.1);
-	console.log('Scroll-catch H');
+	console.log('scroll caught');
 	
 };
 
@@ -74,10 +73,7 @@ function setHeight() {
 $(window).resize(function() {
     setHeight();
 
-
-    // ======================================= not working ========
-
-    if( $('.scroll-catch').height > 1 ) {
+    if( $('.scroll-catch').height() > 1 ) {
     	preloaderScroll();
     };
     
@@ -105,15 +101,6 @@ function preloaderRemove() {
 };
 
 
-// ---- Menu Button
-
-// $(".toggle-menu").click(function() {
-//     $(this).toggleClass("active");
-//     $(".menu-wrap").toggleClass("open");
-//     return false;
-// });
-
-
 function fullPageInit() {
 	$('#fullpage').fullpage({
 
@@ -127,14 +114,14 @@ function fullPageInit() {
         autoScrolling: true,
         // fitToSection: true,
         scrollBar: true,
-        //easing: 'easeInOutCubic',
+        easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
         loopTop: false,
         normalScrollElements: '.preloader',
         // scrollOverflow: false,
-        // touchSensitivity: 15,
-        // normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 7,
+        normalScrollElementTouchThreshold: 5,
 
         //Accessibility
         keyboardScrolling: true,
