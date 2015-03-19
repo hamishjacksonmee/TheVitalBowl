@@ -35,13 +35,13 @@ function startLoader() {
     // callback that will be run once images are ready 
     loader.addCompletionListener(function() { 
 	    
-    	//setTimeout(function() {
+    	setTimeout(function() {
 	        $('.preloader').addClass('loaded');
 	        preloaderScroll();
 
 	    	console.log("loaded");
 
-    	//}, 2500);
+    	}, 3500);
         
     });
 
@@ -120,7 +120,7 @@ function fullPageInit() {
         loopTop: false,
         normalScrollElements: '.preloader',
         // scrollOverflow: false,
-        touchSensitivity: 7,
+        touchSensitivity: 5,
         normalScrollElementTouchThreshold: 5,
 
         //Accessibility
