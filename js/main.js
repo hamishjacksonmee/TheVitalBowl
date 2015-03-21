@@ -41,7 +41,7 @@ function startLoader() {
 
 	    	console.log("loaded");
 
-    	}, 3500);
+    	}, 2500);
         
     });
 
@@ -120,7 +120,7 @@ function fullPageInit() {
         loopTop: false,
         normalScrollElements: '.preloader',
         // scrollOverflow: false,
-        touchSensitivity: 5,
+        touchSensitivity: 8,
         normalScrollElementTouchThreshold: 5,
 
         //Accessibility
