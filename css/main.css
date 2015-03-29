@@ -327,7 +327,7 @@ html, body {
   left: 20px; }
 
 body {
-  font-family: 'Source Sans Pro', helvetica, sans-serif;
+  font-family: georgia, serif;
   background-color: #000; }
 
 a:hover, a:active, a:focus {
@@ -336,8 +336,30 @@ a:hover, a:active, a:focus {
 h2 {
   font-size: 2em;
   margin: 0;
-  color: white;
-  font-family: georgia; }
+  color: black;
+  font-family: georgia;
+  font-style: italic; }
+
+h3 {
+  font-size: 1.6em;
+  font-family: georgia;
+  font-weight: bold;
+  margin: 0; }
+
+p {
+  font-family: georgia;
+  font-size: 1.2em;
+  line-height: 1.5; }
+  p.col-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.4em;
+    -moz-column-gap: 1.4em;
+    column-gap: 1.4em; }
+  p strong {
+    font-style: italic;
+    color: #229eb2; }
 
 .site-wrap {
   position: relative;
@@ -357,9 +379,128 @@ h2 {
   background-color: white;
   width: 100%; }
 
-#pageOne {
-  background: rgba(255, 255, 255, 0.5) url("../img/page1-bg2.jpg") no-repeat center center;
-  background-size: cover; }
+.section-inner {
+  width: 100%;
+  position: relative; }
+  .section-inner.full-page {
+    height: 100%; }
+
+.pageOne-img {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  width: 70%;
+  height: 70%;
+  background: url("../img/page1-bg.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 8;
+  opacity: 0.6; }
+
+.pageOne-text {
+  position: absolute;
+  width: 60%;
+  left: 10%;
+  top: 25%;
+  height: auto;
+  z-index: 9; }
+
+.pageTwo-text {
+  width: 70%;
+  height: auto;
+  margin-left: 20%; }
+  .pageTwo-text h3 {
+    margin-left: -15%;
+    font-size: 2.6em;
+    padding-bottom: 0.5em; }
+  .pageTwo-text p {
+    width: 50%;
+    float: left;
+    padding: 0.7em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.pageThree-text-wrap {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  top: 0;
+  padding-left: 3%;
+  padding-right: 8%;
+  display: table;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pageThree-text {
+  display: table-cell;
+  vertical-align: middle; }
+  .pageThree-text h2 {
+    padding-bottom: 1em; }
+  .pageThree-text span {
+    padding-left: 1em;
+    border-left: 3px black solid;
+    display: block; }
+
+.pageThree-img-wrap {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  height: 100%;
+  top: 0;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pageThree-img {
+  background: url("../img/page3-lrg.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%; }
+
+.pageFour-text-wrap {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  height: 100%;
+  top: 0;
+  padding-left: 8%;
+  padding-right: 3%;
+  display: table;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pageFour-text {
+  display: table-cell;
+  vertical-align: middle; }
+  .pageFour-text h2 {
+    padding-bottom: 1em; }
+  .pageFour-text span {
+    padding-left: 1em;
+    border-left: 3px black solid;
+    display: block; }
+
+.pageFour-img-wrap {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  top: 0;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.pageFour-img {
+  background: url("../img/page4-lrg.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%; }
 
 .preloader {
   width: 100%;
@@ -584,7 +725,7 @@ h2 {
   right: 30px;
   top: 50%;
   z-index: 99;
-  margin-top: -170px; }
+  margin-top: -120px; }
 
 .verticalText {
   position: absolute;

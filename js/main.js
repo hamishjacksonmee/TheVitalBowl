@@ -2,18 +2,18 @@ $(document).ready(function(){
 
 	// Preloader Calls
 
-	startLoader();
+	//startLoader();
 
-	$('.enter-site-button').click(enterSite);
+	// $('.enter-site-button').click(enterSite);
 
-	$( '.preloader' ).scroll(function() {
+	// $( '.preloader' ).scroll(function() {
 
-		var elem = $("#preloader");
-		if (elem.hasClass ("loaded")) {
-			enterSite();
-		};
+	// 	var elem = $("#preloader");
+	// 	if (elem.hasClass ("loaded")) {
+	// 		enterSite();
+	// 	};
 			
-	});
+	// });
 
 
 	// Init Functions
