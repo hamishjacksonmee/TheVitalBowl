@@ -35,13 +35,13 @@ function startLoader() {
     // callback that will be run once images are ready 
     loader.addCompletionListener(function() { 
 	    
-    	setTimeout(function() {
+    	//setTimeout(function() {
 	        $('.preloader').addClass('loaded');
 	        preloaderScroll();
 
 	    	console.log("loaded");
 
-    	}, 2500);
+    	//}, 2500);
         
     });
 

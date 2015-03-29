@@ -23,7 +23,7 @@
     	font-weight: bold;
     	padding: 0.4em;
     	text-decoration: none;
-    	color: black;
+    	color: white;
     	@include trans(200ms);
     	&:hover {
     		color: #229eb2;
@@ -35,9 +35,12 @@
     	//@include trans(1s);
 
     	&.active {
-			border: 1px black solid;
+			border: 1px #229eb2 solid;
+			a {
+				color: #229eb2;
+			}
 			a:hover {
-				color: black;
+				color: #229eb2;
 			}
 		}
     }

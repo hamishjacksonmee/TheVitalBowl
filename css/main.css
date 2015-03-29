@@ -327,10 +327,17 @@ html, body {
   left: 20px; }
 
 body {
-  font-family: 'Source Sans Pro', helvetica, sans-serif; }
+  font-family: 'Source Sans Pro', helvetica, sans-serif;
+  background-color: #000; }
 
 a:hover, a:active, a:focus {
   outline: 0; }
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+  font-family: georgia; }
 
 .site-wrap {
   position: relative;
@@ -349,6 +356,10 @@ a:hover, a:active, a:focus {
 .inner-wrap {
   background-color: white;
   width: 100%; }
+
+#pageOne {
+  background: rgba(255, 255, 255, 0.5) url("../img/page1-bg2.jpg") no-repeat center center;
+  background-size: cover; }
 
 .preloader {
   width: 100%;
@@ -595,7 +606,7 @@ a:hover, a:active, a:focus {
     font-weight: bold;
     padding: 0.4em;
     text-decoration: none;
-    color: black;
+    color: white;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -o-transition: all 200ms ease;
@@ -606,9 +617,11 @@ a:hover, a:active, a:focus {
   .verticalText span {
     padding: 0.3em 0 0.1em 0; }
     .verticalText span.active {
-      border: 1px black solid; }
+      border: 1px #229eb2 solid; }
+      .verticalText span.active a {
+        color: #229eb2; }
       .verticalText span.active a:hover {
-        color: black; }
+        color: #229eb2; }
 
 .nav-info {
   list-style: none;
