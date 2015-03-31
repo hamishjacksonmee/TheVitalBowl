@@ -119,7 +119,7 @@ function fullPageInit() {
         loopBottom: false,
         loopTop: false,
         normalScrollElements: '.preloader',
-        // scrollOverflow: false,
+        scrollOverflow: true,
         touchSensitivity: 8,
         normalScrollElementTouchThreshold: 5,
 
