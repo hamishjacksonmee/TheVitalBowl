@@ -106,7 +106,7 @@ function fullPageInit() {
 
         //Navigation
         menu: '#menu',
-        anchors:['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage'],
+        anchors:['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', 'contact'],
 
         // //Scrolling
         css3: true,
