@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1024px) {
+
+	h2 {
+		font-size: 3em;
+	}
+	h3 {
+		font-size: 1.4em;
+	}
+	p {
+		line-height: 1.3;
+	}
+
+	.right-nav {
+		right: 18px;
+		line-height: 1.4em;
+	}
+
+	.verticalText {
+		a {
+			padding: 0.2em;
+		}
+		span {
+			padding: 0.2em 0 0.1em 0;
+		}
+	}
+
+	.contact-button-wrap {
+		right: 25px;
+		bottom: 12em;
+	}
+
+	.fullpage-wrapper {
+		padding-right: 70px; 
+	}
+
+}
+
+@media only screen and (max-width: 720px) {
+	h2 {
+		font-size: 1.6em;
+	}
+	h3 {
+		font-size: 1.3em;
+	}
+	p {
+		line-height: 1.2;
+	}
+	.fullpage-wrapper {
+		overflow: hidden;
+	}
+	.pageTwo-text {
+		width: 100%;
+		margin-left: 0;
+		padding: 0 1em;
+		@include border-box;
+
+		h2 {
+			margin-left: 0;
+		}
+		p {
+			width: 100%;
+			padding: 0;
+		}
+		h3 {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.section {
+		padding: 3em 0;
+		@include border-box;
+	}
+	.pageThree-text-wrap {
+		position: relative;
+		padding: 1em;
+		width: 100%;
+		height: auto;
+
+		h2 {
+			margin-left: 0;
+		}
+	}
+	.pageThree-img-wrap {
+		position: relative;
+		padding: 1em;
+		padding-top: 0;
+		width: 100%;
+		height: 16em;
+	}
+	.pageFour-text-wrap {
+		position: relative;
+		padding: 1em;
+		width: 100%;
+		@include border-box;
+		height: auto;
+	}
+	.pageFour-text {
+		padding: 0;
+		h2 {
+			margin-left: 0;
+			span{
+				margin-left: 0;
+			}
+		}
+	}
+	.pageFour-img-wrap {
+		position: relative;
+		padding: 1em;
+		padding-top: 0;
+		width: 100%;
+		height: 16em;
+		@include border-box;
+	}
+	.pageFive-wrap-one {
+		position: relative;
+		padding: 1em;
+		width: 100%;
+		height: auto;
+		top: 0;
+		@include border-box;
+	}
+	.pageFive-wrap-two {
+		position: relative;
+		padding: 1em;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		@include border-box;
+	}
+	.pageFive-img {
+		width: 100%;
+		padding: 0;
+		margin-left: 0;
+		height: 16em;
+		margin: 0 !important;
+	}
+	.pageFive-text {
+		width: 100%;
+		height: auto;
+		padding: 1em 0;
+		h2 {
+			font-size: 1.6em;
+			left: 0;
+			right: 0;
+		}
+	}
+	.contact-text {
+		white-space: wrap;
+		position: relative;
+		top: 0;
+		h2 {
+			font-size: 1.4em;
+		}
+	}
+	.contact-links {
+		margin-top: 4em;
+		a {
+			width: 2em;
+			height: 2em;
+			margin: 0 0.2em;
+			padding: 0.3em;
+			font-size: 2em;
+		}
+	}
+}
+
+
