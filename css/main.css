@@ -357,6 +357,9 @@ p {
     font-style: italic;
     color: #229eb2; }
 
+#pageTwo {
+  padding: 1em 0; }
+
 .site-wrap {
   position: relative;
   -webkit-transition: all 200ms ease;
@@ -376,7 +379,7 @@ p {
   width: 100%; }
 
 .section {
-  border-bottom: 2px black solid; }
+  border-bottom: 2px #929292 solid; }
 
 .section-inner {
   width: 100%;
@@ -439,23 +442,20 @@ p {
   right: 0;
   height: 100%;
   top: 0;
+  padding-top: 2em;
   padding-left: 1%;
   padding-right: 10%;
   z-index: 5;
-  display: table;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.pageThree-text {
-  display: table-cell;
-  vertical-align: middle; }
-  .pageThree-text h2 {
-    margin-left: -40%; }
-  .pageThree-text .inset {
-    padding-left: 1em;
-    border-left: 2px #229eb2 solid;
-    display: block; }
+.pageThree-text h2 {
+  margin-left: -40%; }
+.pageThree-text .inset {
+  padding-left: 1em;
+  border-left: 2px #229eb2 solid;
+  display: block; }
 
 .pageThree-img-wrap {
   position: absolute;
@@ -506,7 +506,7 @@ p {
   right: 0;
   height: 100%;
   top: 0;
-  padding: 12% 4em 3em 2em;
+  padding: 15% 4em 3em 2em;
   z-index: 4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -577,6 +577,48 @@ p {
     position: relative; }
   .pageFive-text p strong {
     color: black; }
+
+.contact-text {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  white-space: nowrap; }
+
+.contact-links {
+  width: 100%;
+  margin-top: 6em;
+  text-align: center; }
+  .contact-links a {
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.5em;
+    border: 0.14em black solid;
+    padding: 0.5em;
+    font-size: 4em;
+    color: black;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease; }
+    .contact-links a:hover {
+      color: #229eb2;
+      border-color: #229eb2; }
+
+.made-by {
+  position: absolute;
+  white-space: nowrap;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+  text-align: center; }
 
 .preloader {
   width: 100%;
@@ -899,6 +941,159 @@ p {
   right: 120px;
   top: 0; }
 
+@media only screen and (max-width: 1024px) {
+  h2 {
+    font-size: 3em; }
+
+  h3 {
+    font-size: 1.4em; }
+
+  p {
+    line-height: 1.3; }
+
+  .right-nav {
+    right: 18px;
+    line-height: 1.4em; }
+
+  .verticalText a {
+    padding: 0.2em; }
+  .verticalText span {
+    padding: 0.2em 0 0.1em 0; }
+
+  .contact-button-wrap {
+    right: 25px;
+    bottom: 12em; }
+
+  .fullpage-wrapper {
+    padding-right: 70px; } }
+@media only screen and (max-width: 720px) {
+  h2 {
+    font-size: 1.6em; }
+
+  h3 {
+    font-size: 1.3em; }
+
+  p {
+    line-height: 1.2; }
+
+  .fullpage-wrapper {
+    overflow: hidden; }
+
+  .pageTwo-text {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .pageTwo-text h2 {
+      margin-left: 0; }
+    .pageTwo-text p {
+      width: 100%;
+      padding: 0; }
+    .pageTwo-text h3 {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0; }
+
+  .section {
+    padding: 3em 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .pageThree-text-wrap {
+    position: relative;
+    padding: 1em;
+    width: 100%;
+    height: auto; }
+    .pageThree-text-wrap h2 {
+      margin-left: 0; }
+
+  .pageThree-img-wrap {
+    position: relative;
+    padding: 1em;
+    padding-top: 0;
+    width: 100%;
+    height: 16em; }
+
+  .pageFour-text-wrap {
+    position: relative;
+    padding: 1em;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto; }
+
+  .pageFour-text {
+    padding: 0; }
+    .pageFour-text h2 {
+      margin-left: 0; }
+      .pageFour-text h2 span {
+        margin-left: 0; }
+
+  .pageFour-img-wrap {
+    position: relative;
+    padding: 1em;
+    padding-top: 0;
+    width: 100%;
+    height: 16em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .pageFive-wrap-one {
+    position: relative;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    top: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .pageFive-wrap-two {
+    position: relative;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .pageFive-img {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    height: 16em;
+    margin: 0 !important; }
+
+  .pageFive-text {
+    width: 100%;
+    height: auto;
+    padding: 1em 0; }
+    .pageFive-text h2 {
+      font-size: 1.6em;
+      left: 0;
+      right: 0; }
+
+  .contact-text {
+    white-space: wrap;
+    position: relative;
+    top: 0; }
+    .contact-text h2 {
+      font-size: 1.4em; }
+
+  .contact-links {
+    margin-top: 4em; }
+    .contact-links a {
+      width: 2em;
+      height: 2em;
+      margin: 0 0.2em;
+      padding: 0.3em;
+      font-size: 2em; } }
 /* ==========================================================================
    Media Queries
    ========================================================================== */

@@ -25,6 +25,7 @@
     	text-decoration: none;
     	color: white;
     	@include trans(200ms);
+    	
     	&:hover {
     		color: #229eb2;
     	}
@@ -33,7 +34,6 @@
     span {
     	padding: 0.3em 0 0.2em 0;
     	@include border-box;
-    	//@include trans(1s);
 
     	&.active {
 			border-bottom: 2px #229eb2 solid;

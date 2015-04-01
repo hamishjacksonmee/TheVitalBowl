@@ -2,18 +2,18 @@ $(document).ready(function(){
 
 	// Preloader Calls
 
-	// startLoader();
+	startLoader();
 
-	// $('.enter-site-button').click(enterSite);
+	$('.enter-site-button').click(enterSite);
 
-	// $( '.preloader' ).scroll(function() {
+	$( '.preloader' ).scroll(function() {
 
-	// 	var elem = $("#preloader");
-	// 	if (elem.hasClass ("loaded")) {
-	// 		enterSite();
-	// 	};
+		var elem = $("#preloader");
+		if (elem.hasClass ("loaded")) {
+			enterSite();
+		};
 			
-	// });
+	});
 
 
 	// Init Functions
@@ -29,19 +29,21 @@ $(document).ready(function(){
 function startLoader() {
 
     var loader = new PxLoader(), 
-        backgroundImg = loader.addImage('img/assasin.jpg'), 
-        backgroundImgTwo = loader.addImage('img/city.jpg');
+        ImgOne = loader.addImage('img/page3-lrg.jpg'), 
+        ImgTwo = loader.addImage('img/page4-lrg.jpg');
+        ImgThree = loader.addImage('img/page5-1.jpg');
+        ImgFour = loader.addImage('img/page5-2.jpg');
      
     // callback that will be run once images are ready 
     loader.addCompletionListener(function() { 
 	    
-    	setTimeout(function() {
+    	//setTimeout(function() {
 	        $('.preloader').addClass('loaded');
 	        preloaderScroll();
 
 	    	console.log("loaded");
 
-    	}, 2500);
+    	//}, 2500);
         
     });
 
