@@ -320,7 +320,6 @@ p {
 		color: black;
 		text-decoration: none;
 		@include border-box;
-		@include trans(200ms);
 
 		&:hover {
 			color: #229eb2;

@@ -602,12 +602,7 @@ p {
     text-decoration: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    transition: all 200ms ease; }
+    box-sizing: border-box; }
     .contact-links a:hover {
       color: #229eb2;
       border-color: #229eb2; }
@@ -865,12 +860,7 @@ p {
     font-style: italic;
     padding: 0.3em;
     text-decoration: none;
-    color: white;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    transition: all 200ms ease; }
+    color: white; }
     .verticalText a:hover {
       color: #229eb2; }
   .verticalText span {
@@ -911,12 +901,7 @@ p {
     font-style: italic;
     padding: 0.3em;
     text-decoration: none;
-    color: white;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    transition: all 200ms ease; }
+    color: white; }
     .contact-button-inner a:hover {
       color: #229eb2; }
   .contact-button-inner span.active a {
