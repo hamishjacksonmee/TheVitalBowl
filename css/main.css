@@ -353,13 +353,6 @@ p {
   font-family: georgia, serif;
   font-size: 1.2em;
   line-height: 1.5; }
-  p.col-2 {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 1.4em;
-    -moz-column-gap: 1.4em;
-    column-gap: 1.4em; }
   p strong {
     font-style: italic;
     color: #229eb2; }
@@ -470,7 +463,7 @@ p {
   left: 0;
   height: 75%;
   bottom: 0;
-  padding: 2em;
+  padding: 2em 2em 4em 4em;
   z-index: 4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -513,7 +506,7 @@ p {
   right: 0;
   height: 100%;
   top: 0;
-  padding: 2em;
+  padding: 12% 4em 3em 2em;
   z-index: 4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -540,7 +533,9 @@ p {
   .pageFive-wrap-one .pageFive-text {
     text-align: left;
     float: left; }
-  .pageFive-wrap-one h3 {
+  .pageFive-wrap-one h2 {
+    left: -18%; }
+  .pageFive-wrap-one p {
     padding-left: 0.2em; }
 
 .pageFive-wrap-two {
@@ -557,7 +552,9 @@ p {
   .pageFive-wrap-two .pageFive-text {
     text-align: right;
     float: right; }
-  .pageFive-wrap-two h3 {
+  .pageFive-wrap-two h2 {
+    right: -18%; }
+  .pageFive-wrap-two p {
     padding-right: 0.2em; }
 
 .pageFive-img {
@@ -574,11 +571,12 @@ p {
   box-sizing: border-box; }
   .pageFive-text h2 {
     font-weight: bold;
+    font-size: 6.5em;
     line-height: 1;
-    width: 100%; }
-  .pageFive-text h3 {
-    font-weight: lighter;
-    font-family: Sans-Serif; }
+    width: 100%;
+    position: relative; }
+  .pageFive-text p strong {
+    color: black; }
 
 .preloader {
   width: 100%;

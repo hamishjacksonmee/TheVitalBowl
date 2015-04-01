@@ -33,14 +33,6 @@ p {
 	font-size: 1.2em;
 	line-height: 1.5;
 
-	&.col-2 {
-		-webkit-column-count: 2;
-    	-moz-column-count: 2;
-    	column-count: 2;
-    	-webkit-column-gap: 1.4em;
-	    -moz-column-gap: 1.4em;
-	    column-gap: 1.4em;
-	}
 	strong {
 		font-style: italic;
 		color: #229eb2;
@@ -168,7 +160,7 @@ p {
 	left: 0;
 	height: 75%;
 	bottom: 0;
-	padding: 2em;
+	padding: 2em 2em 4em 4em;
 	z-index: 4;
 	@include border-box;
 }
@@ -214,7 +206,7 @@ p {
 	right: 0;
 	height: 100%;
 	top: 0;
-	padding: 2em;
+	padding: 12% 4em 3em 2em;
 	z-index: 4;
 	@include border-box;
 }
@@ -243,7 +235,10 @@ p {
 		text-align: left;
 		float: left;
 	}
-	h3 {
+	h2 {
+		left: -18%;
+	}
+	p {
 		padding-left: 0.2em;
 	}
 }
@@ -264,7 +259,10 @@ p {
 		text-align: right;
 		float: right;
 	}
-	h3 {
+	h2 {
+		right: -18%;
+	}
+	p {
 		padding-right: 0.2em;
 	}
 }
@@ -282,13 +280,16 @@ p {
 
 	h2 {
 		font-weight: bold;
+		font-size: 6.5em;
 		line-height: 1;
 		width: 100%;
+		position: relative;
 	}
-
-	h3 {
-		font-weight: lighter;
-		font-family: Sans-Serif;
+	p {
+		strong {
+			color: black;
+		}
+		
 	}
 }
 
