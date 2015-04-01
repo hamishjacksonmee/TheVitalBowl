@@ -818,12 +818,12 @@ p {
   display: inline-block;
   font-size: 1.4em;
   line-height: 1.6;
-  white-space: nowrap;
-  color: white; }
+  white-space: nowrap; }
   .verticalText a {
     font-weight: bold;
-    font-family: sans-serif;
-    padding: 0.4em;
+    font-family: georgia, serif;
+    font-style: italic;
+    padding: 0.3em;
     text-decoration: none;
     color: white;
     -webkit-transition: all 200ms ease;
@@ -834,22 +834,64 @@ p {
     .verticalText a:hover {
       color: #229eb2; }
   .verticalText span {
-    padding: 0.3em 0 0.1em 0;
+    padding: 0.3em 0 0.2em 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
     .verticalText span.active {
-      border: 1px #229eb2 solid; }
+      border-bottom: 2px #229eb2 solid; }
       .verticalText span.active a {
         color: #229eb2; }
       .verticalText span.active a:hover {
         color: #229eb2; }
-    .verticalText span.contact a {
-      font-family: georgia, serif;
-      font-style: italic;
-      padding-left: 0; }
-    .verticalText span.contact.active {
-      border: none; }
+
+.contact-button-wrap {
+  position: fixed;
+  right: 30px;
+  bottom: 13em;
+  z-index: 100; }
+
+.contact-button-inner {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  display: inline-block;
+  font-size: 1.4em;
+  white-space: nowrap; }
+  .contact-button-inner a {
+    font-weight: bold;
+    font-family: georgia, serif;
+    font-style: italic;
+    padding: 0.3em;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease; }
+    .contact-button-inner a:hover {
+      color: #229eb2; }
+  .contact-button-inner span.active a {
+    color: #229eb2; }
+  .contact-button-inner span.active a:hover {
+    color: #229eb2; }
+
+.mdash {
+  width: 2.4em;
+  height: 0.1em;
+  background-color: white;
+  position: relative;
+  top: -0.2em;
+  display: inline-block;
+  margin-right: 0.2em; }
 
 .nav-info {
   list-style: none;
@@ -858,18 +900,6 @@ p {
   position: absolute;
   right: 120px;
   top: 0; }
-
-.nav-text-the {
-  font-size: 0.8em;
-  margin-right: 1em;
-  font-weight: lighter;
-  color: gray; }
-
-.nav-text-bowl {
-  font-size: 0.8em;
-  margin-left: 1em;
-  font-weight: lighter;
-  color: gray; }
 
 /* ==========================================================================
    Media Queries

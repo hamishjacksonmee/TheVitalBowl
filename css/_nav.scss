@@ -6,7 +6,6 @@
 	right: 30px;
 	top: 8%;
 	z-index: 99;
-	//margin-top: -260px;
 }
 
 .verticalText {
@@ -17,14 +16,12 @@
     font-size: 1.4em;
     line-height: 1.6;
     white-space: nowrap;
-    color: white;
-    //color: #cecece;
 
     a {
     	font-weight: bold;
-    	//font-style: italic;
-    	font-family: sans-serif;
-    	padding: 0.4em;
+    	font-family: georgia, serif;
+		font-style: italic;
+    	padding: 0.3em;
     	text-decoration: none;
     	color: white;
     	@include trans(200ms);
@@ -34,12 +31,12 @@
     }
 
     span {
-    	padding: 0.3em 0 0.1em 0;
+    	padding: 0.3em 0 0.2em 0;
     	@include border-box;
     	//@include trans(1s);
 
     	&.active {
-			border: 1px #229eb2 solid;
+			border-bottom: 2px #229eb2 solid;
 			a {
 				color: #229eb2;
 			}
@@ -47,19 +44,57 @@
 				color: #229eb2;
 			}
 		}
+    }
+    
+}
 
-		&.contact {	
+.contact-button-wrap {
+	position: fixed;
+	right: 30px;
+	bottom: 13em;
+	z-index: 100;
+}
+.contact-button-inner {
+	position: absolute;
+	@include transform(rotate(90deg));
+	@include transform-origin(top left);
+    display: inline-block;
+    font-size: 1.4em;
+    white-space: nowrap;
+
+    a {
+    	font-weight: bold;
+    	font-family: georgia, serif;
+		font-style: italic;
+    	padding: 0.3em;
+    	text-decoration: none;
+    	color: white;
+    	@include trans(200ms);
+    	&:hover {
+    		color: #229eb2;
+    	}
+    }
+
+    span {
+    	&.active {
 			a {
-				font-family: georgia, serif;
-				font-style: italic;
-				padding-left: 0;
+				color: #229eb2;
 			}
-			&.active {
-				border: none;
+			a:hover {
+				color: #229eb2;
 			}
 		}
     }
-    
+}
+
+.mdash {
+	width: 2.4em;
+	height: 0.1em;
+	background-color: white;
+	position: relative;
+	top: -0.2em;
+	display: inline-block;
+	margin-right: 0.2em;
 }
 
 .nav-info {
@@ -70,17 +105,6 @@
 	right: 120px;
 	top: 0;
 }
-.nav-text-the {
-	font-size: 0.8em;
-	margin-right: 1em;
-	font-weight: lighter;
-	color: gray;
-}
-.nav-text-bowl {
-	font-size: 0.8em;
-	margin-left: 1em;
-	font-weight: lighter;
-	color: gray;
-}
+
 
 
