@@ -24,12 +24,12 @@ h2 {
 }
 h3 {
 	font-size: 1.6em;
-	font-family: georgia;
+	font-family: georgia, serif;
 	font-weight: bold;
 	margin: 0;
 }
 p {
-	font-family: georgia;
+	font-family: georgia, serif;
 	font-size: 1.2em;
 	line-height: 1.5;
 
@@ -80,16 +80,6 @@ p {
 	&.full-page {
 		height: 100%;
 	}
-}
-
-.contact-button {
-	position: fixed;
-	width: 100px;
-	background-color: black;
-	color: white;
-	top: 1em;
-	left: 1em;
-	z-index: 999;
 }
 
 .rule1 {
