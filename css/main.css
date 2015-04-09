@@ -357,9 +357,6 @@ p {
     font-style: italic;
     color: #229eb2; }
 
-#pageTwo {
-  padding: 1em 0; }
-
 .site-wrap {
   position: relative;
   -webkit-transition: all 200ms ease;
@@ -379,7 +376,7 @@ p {
   width: 100%; }
 
 .section {
-  border-bottom: 2px #929292 solid; }
+  border-bottom: 1px #229eb2 solid; }
 
 .section-inner {
   width: 100%;
@@ -436,15 +433,18 @@ p {
     background-color: black;
     margin-left: 1em; }
 
+.pageThree-wrap {
+  width: 100%;
+  height: auto;
+  position: relative; }
+
 .pageThree-text-wrap {
-  position: absolute;
+  position: relative;
   width: 50%;
-  right: 0;
-  height: 100%;
-  top: 0;
-  padding-top: 2em;
-  padding-left: 1%;
-  padding-right: 10%;
+  margin-left: 50%;
+  float: left;
+  height: auto;
+  padding: 2em 10% 2em 1%;
   z-index: 5;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -461,9 +461,9 @@ p {
   position: absolute;
   width: 50%;
   left: 0;
-  height: 75%;
+  height: 100%;
   bottom: 0;
-  padding: 2em 2em 4em 4em;
+  padding: 6em 2em 1em 4em;
   z-index: 4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -477,23 +477,20 @@ p {
   height: 100%; }
 
 .pageFour-text-wrap {
-  position: absolute;
-  width: 40%;
-  left: 0;
-  height: 100%;
-  top: 0;
+  position: relative;
+  width: 50%;
+  height: auto;
   z-index: 5; }
 
 .pageFour-text {
   width: 100%;
-  height: 100%;
-  padding: 14% 3% 5% 32%;
+  padding: 1em 5% 5em 25%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
   .pageFour-text h2 {
     line-height: 1;
-    margin-left: -30%; }
+    margin-left: -20%; }
     .pageFour-text h2 span {
       white-space: nowrap;
       margin-left: -1%; }
@@ -502,11 +499,11 @@ p {
 
 .pageFour-img-wrap {
   position: absolute;
-  width: 60%;
+  width: 50%;
   right: 0;
   height: 100%;
   top: 0;
-  padding: 15% 4em 3em 2em;
+  padding: 9.6em 3em 0 0;
   z-index: 4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -926,22 +923,28 @@ p {
   right: 120px;
   top: 0; }
 
-@media only screen and (min-width: 1286px) {
-  .pageTwo-text h2 {
-    padding-top: 1em; } }
+@media only screen and (min-width: 1400px) {
+  .pageThree-img-wrap {
+    padding-top: 11em; } }
 @media only screen and (max-width: 1400px) {
   h2 {
     font-size: 2em; }
 
+  .rule1 {
+    height: 0.4em; }
+
   .pageFive-text h2 {
-    font-size: 2em; } }
+    font-size: 3em; }
+
+  .pageFour-img-wrap {
+    padding-top: 5em; } }
 @media only screen and (max-width: 1286px) {
   h3 {
     font-size: 1.4em; }
 
   p {
     font-size: 1em;
-    line-height: 1.2; }
+    line-height: 1.3; }
 
   .right-nav {
     right: 18px;
@@ -957,10 +960,7 @@ p {
     bottom: 12em; }
 
   .fullpage-wrapper {
-    padding-right: 70px; }
-
-  .pageFive-text h2 {
-    font-size: 2em; } }
+    padding-right: 70px; } }
 @media only screen and (max-width: 720px) {
   h2 {
     font-size: 1.6em; }
@@ -974,7 +974,7 @@ p {
   .pageTwo-text {
     width: 100%;
     margin-left: 0;
-    padding: 0 1em;
+    padding: 3em 1em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -988,30 +988,27 @@ p {
       padding-left: 0;
       padding-right: 0; }
 
-  .section {
-    padding: 3em 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-
   .pageThree-text-wrap {
     position: relative;
     padding: 1em;
+    padding-bottom: 3em;
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-left: 0; }
     .pageThree-text-wrap h2 {
       margin-left: 0; }
 
   .pageThree-img-wrap {
     position: relative;
     padding: 1em;
-    padding-top: 0;
+    padding-top: 3em;
     width: 100%;
-    height: 16em; }
+    height: 20em; }
 
   .pageFour-text-wrap {
     position: relative;
     padding: 1em;
+    padding-bottom: 3em;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1028,12 +1025,9 @@ p {
   .pageFour-img-wrap {
     position: relative;
     padding: 1em;
-    padding-top: 0;
+    padding-top: 3em;
     width: 100%;
-    height: 16em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
+    height: 20em; }
 
   .pageFive-wrap-one {
     position: relative;
@@ -1074,7 +1068,11 @@ p {
   .contact-text {
     white-space: wrap;
     position: relative;
-    top: 0; }
+    top: 0;
+    padding-top: 3em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
     .contact-text h2 {
       font-size: 1.4em; }
 
@@ -1090,13 +1088,25 @@ p {
   h2 {
     font-size: 1.2em; }
 
+  .rule1 {
+    width: 15%; }
+
   .contact-text {
     white-space: wrap; }
     .contact-text h2 {
       font-size: 1.2em; } }
+@media only screen and (max-width: 340px) {
+  .right-nav {
+    display: none; }
+
+  .pageFive-text h2 {
+    font-size: 2em; } }
 @media only screen and (max-height: 600px) {
   .loader-wrap {
-    bottom: 10px; } }
+    bottom: 10px; }
+
+  .contact-links {
+    margin-top: 2em; } }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
