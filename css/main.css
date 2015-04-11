@@ -933,6 +933,9 @@ p {
   .rule1 {
     height: 0.4em; }
 
+  .pageThree-text h2 {
+    margin-left: -25%; }
+
   .pageFive-text h2 {
     font-size: 3em; }
 
