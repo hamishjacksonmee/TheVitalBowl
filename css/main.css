@@ -386,6 +386,25 @@ p {
   .section-inner.full-page {
     height: 100%; }
 
+.next-page {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -15px;
+  border-radius: 100%;
+  background-color: #229eb2;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8em;
+  padding: 0.15em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .next-page:hover {
+    background-color: #000; }
+
 .rule1 {
   width: 10%;
   height: 0.8em;
@@ -923,9 +942,20 @@ p {
   right: 120px;
   top: 0; }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */ }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */ }
 @media only screen and (min-width: 1400px) {
   .pageThree-img-wrap {
-    padding-top: 11em; } }
+    padding-top: 11em; }
+
+  .next-page {
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    font-size: 2.6em;
+    padding: 0.3em; } }
 @media only screen and (max-width: 1400px) {
   h2 {
     font-size: 2em; }
