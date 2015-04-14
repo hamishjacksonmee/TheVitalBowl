@@ -45,7 +45,7 @@ p {
 
 .site-wrap {
 	position: relative;
-	@include trans(200ms);
+	// @include trans(200ms);
 	// @include transform(translate3d(0,100%,0));
 	&.entered {
 		// @include transform(translate3d(0,0,0));
@@ -53,9 +53,12 @@ p {
 }
 
 .fullpage-wrapper {
-	padding-right: 90px;
+	@include trans(300ms);
 	@include border-box;
 	//margin-top: 100%;
+	&.loaded {
+		padding-right: 90px;
+	}
 }
 
 .inner-wrap {
@@ -78,23 +81,77 @@ p {
 	}
 }
 
-.next-page {
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
+.previous-page {
+	position: fixed;
+	z-index: 9;
+	top: 30px;
+	left: 20px;
 	width: 40px;
 	height: 40px;
-	margin-left: -15px;
+	//margin-left: -15px;
 	border-radius: 100%;
-	background-color: #229eb2;
+	background-color: #000;
 	color: white;
 	text-decoration: none;
 	font-size: 1.8em;
 	padding: 0.15em;
+	text-align: center;
+	cursor: pointer;
+	@include trans(300ms);
 	@include border-box;
+	opacity: 0;
 
 	&:hover {
-		background-color: #000;
+		background-color: #229eb2;
+	}
+
+	&.active {
+		opacity: 1;
+	}
+}
+
+
+.next-page {
+	position: fixed;
+	z-index: 9;
+	bottom: 30px;
+	left: 20px;
+	width: 40px;
+	height: 40px;
+	//margin-left: -15px;
+	border-radius: 100%;
+	background-color: #000;
+	color: white;
+	text-decoration: none;
+	font-size: 1.8em;
+	padding: 0.15em;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0;
+	@include transform(translate(-200px,0));
+
+	@include trans(300ms);
+	@include border-box;
+
+	span {
+		@include trans(300ms);
+		@include transDelay(500ms);
+		opacity: 0;
+	}
+
+	&:hover {
+		background-color: #229eb2;
+	}
+
+	&.loaded {
+		@include transform(translate(0,0));
+		span {
+			opacity: 1;
+		}
+	}
+
+	&.active {
+		opacity: 1;
 	}
 }
 

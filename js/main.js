@@ -4,16 +4,41 @@ $(document).ready(function(){
 
 	startLoader();
 
-	$('.enter-site-button').click(enterSite);
+    // Home nav buttons
+    $('#preloader').bind('inview', function(event, isInView) {
+        if (isInView) {
+        // element is now visible in the viewport
+            $('.previous-page').removeClass('active');
+            setTimeout(function() {
+                $('.previous-page').addClass('hidden');
+            }, 300);
+        } else {
+        // element has gone out of viewport
+            $('.previous-page').removeClass('hidden');
+            setTimeout(function() {
+                $('.previous-page').addClass('active');
+            }, 300);
+        }
+    });
 
-	$( '.preloader' ).scroll(function() {
+    $('#contactPage').bind('inview', function(event, isInView) {
+        if (isInView) {
+        // element is now visible in the viewport
+            $('.next-page').removeClass('active');
+            setTimeout(function() {
+                $('.next-page').addClass('hidden');
+            }, 300);
+        } else {
+        // element has gone out of viewport
+            $('.next-page').removeClass('hidden');
+            setTimeout(function() {
+                $('.next-page').addClass('active');
+            }, 300);
+        }
+    });
 
-		var elem = $("#preloader");
-		if (elem.hasClass ("loaded")) {
-			enterSite();
-		};
-			
-	});
+    $('.next-page').click(homeScrollDown);
+    $('.previous-page').click(homeScrollUp);
 
 
 	// Init Functions
@@ -37,27 +62,32 @@ function startLoader() {
     // callback that will be run once images are ready 
     loader.addCompletionListener(function() { 
 	    
-    	//setTimeout(function() {
+    	setTimeout(function() {
 	        $('.preloader').addClass('loaded');
-	        preloaderScroll();
+            $('.inner-wrap').removeClass('hidden');
+            $('.right-nav').removeClass('hidden');
+            $('.fullpage-wrapper').addClass('loaded');
+            $('.page-group').removeClass('hidden');
+            $('.next-page').removeClass('hidden');
+
+            setTimeout(function () {
+                $('.next-page').addClass('loaded');
+            }, 10);
+
+            setTimeout(function () {
+                $('.right-nav').addClass('active');
+            }, 500);
+
+	        //preloaderScroll();
 
 	    	console.log("loaded");
 
-    	//}, 2500);
+    	}, 2500);
         
     });
 
     loader.start();
 
-};
-
-function preloaderScroll() {
-	var elem = $('.scroll-catch');
-	var initHeight = elem.height();
-
-	elem.css('height', initHeight * 1.1);
-	console.log('scroll caught');
-	
 };
 
 
@@ -84,22 +114,34 @@ $(window).resize(function() {
 
 // ----- Entering Site
 
-function enterSite() {
+// function enterSite() {
 
-	$('#wrapper').removeClass('hidden').addClass('entered');
+// 	$('#wrapper').removeClass('hidden').addClass('entered');
 
-	$('.preloader').addClass('entered');
+// 	$('.preloader').addClass('entered');
 
-	preloaderRemove();
+// 	preloaderRemove();
 
-	console.log('entered');
+// 	console.log('entered');
 	
-};
+// };
 
-function preloaderRemove() {
-    setTimeout(function() {
-        $('.preloader').remove();
-    }, 1500);
+
+function homeScrollDown() {
+
+    var y = $(window).scrollTop();  //your current y position on the page
+    windowHeight = $(window).innerHeight();
+
+    $('html,body').animate({ scrollTop: y + windowHeight }, 800, 'easeInOutQuint' );
+
+};
+function homeScrollUp() {
+
+    var y = $(window).scrollTop();  //your current y position on the page
+    windowHeight = $(window).innerHeight();
+
+    $('html,body').animate({ scrollTop: y - windowHeight }, 800, 'easeInOutQuint' );
+
 };
 
 
@@ -108,7 +150,7 @@ function fullPageInit() {
 
         //Navigation
         menu: '#menu',
-        anchors:['1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', 'contact'],
+        anchors:['preloaderPage', '1stPage', '2ndPage', '3rdPage', '4thPage', '5thPage', 'contact'],
 
         // //Scrolling
         css3: true,
@@ -120,7 +162,7 @@ function fullPageInit() {
         easingcss3: 'ease',
         loopBottom: false,
         loopTop: false,
-        normalScrollElements: '.preloader',
+        //normalScrollElements: '.preloader',
         scrollOverflow: true,
         touchSensitivity: 8,
         normalScrollElementTouchThreshold: 5,
@@ -128,7 +170,7 @@ function fullPageInit() {
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
-        recordHistory: true,
+        //recordHistory: true,
 
         // //Design
         // controlArrows: true,

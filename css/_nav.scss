@@ -6,6 +6,12 @@
 	right: 30px;
 	top: 8%;
 	z-index: 99;
+	opacity: 0;
+	@include trans(300ms);
+
+	&.active {
+		opacity: 1;
+	}
 }
 
 .verticalText {

@@ -2,11 +2,11 @@
 	width: 100%;
 	display: block;
 	//overflow: hidden;
-	overflow-y: scroll;
-	position: fixed;
-	left: 0; 
-	top: 0; 
-	z-index: 999;
+	// overflow-y: scroll;
+	// position: fixed;
+	// left: 0; 
+	// top: 0; 
+	//z-index: 999;
 	//@include trans(2s);
 	@include cubic-trans(1.5s);
 	background: #229eb2 url('http://itshamish.com/thevitalbowl/img/logo-white.svg') no-repeat center center;
@@ -19,19 +19,16 @@
 		.enter-site-button {
 			@include transform(translate3d(0,0,0));
 			opacity: 1;
-			&:hover {
-				@include transform(translate3d(0,10px,0));
-			}
 		}
 	}
-	&.entered {
-        @include transform(translate3d(0,-100%,0));
-	}
+	// &.entered {
+ //        @include transform(translate3d(0,-100%,0));
+	// }
 }
 .loader-wrap {
 	position: absolute;
 	left: 50%;
-	bottom: 100px;
+	bottom: 50px;
 	width: 200px;
 	height: 100px;
 	margin-left: -100px;
@@ -48,16 +45,16 @@
 	display: block;
 	margin-left: -30px;
 	color: #fff;
-	font-size: 4em;
+	//font-size: 1em;
 	opacity: 0;
 	z-index: 9;
-	cursor: pointer;
 	@include trans(800ms);
 	@include transform(translate3d(0,200px,0));
-}
-.scroll-catch {
-	width: 100%;
-	display: block;
+
+	span {
+		font-size: 2.5em;
+		display: block;
+	}
 }
 
 .loader {

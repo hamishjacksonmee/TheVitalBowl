@@ -1,3 +1,4 @@
+
 @media only screen and (min-width: 1286px) {
 	// .pageTwo-text {
 	// 	h2 {
@@ -7,39 +8,25 @@
 	
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and ( min-resolution: 192dpi),
-only screen and ( min-resolution: 2dppx) {
-    /* Retina-specific stuff here */
-
-
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-  /* Retina-specific stuff here */
-
-    
-
-}
-
-
 @media only screen and (min-width: 1400px) {
 	.pageThree-img-wrap {
 		padding-top: 11em;
 	}
-	.next-page {
-    	width: 70px;
-    	height: 70px;
-    	bottom: 50px;
+	.previous-page {
+    	width: 60px;
+    	height: 60px;
+    	top: 50px;
+    	left: 50px;
     	font-size: 2.6em;
-    	padding: 0.3em;
+    	padding: 0.2em;
+    }
+	.next-page {
+    	width: 60px;
+    	height: 60px;
+    	bottom: 50px;
+    	left: 50px;
+    	font-size: 2.6em;
+    	padding: 0.2em;
     }
 
 }
@@ -97,7 +84,9 @@ only screen and (                min-resolution: 2dppx) {
 	}
 
 	.fullpage-wrapper {
-		padding-right: 70px; 
+		&.loaded {
+			padding-right: 70px; 
+		}
 	}
 
 
@@ -112,6 +101,12 @@ only screen and (                min-resolution: 2dppx) {
 	}
 	.fullpage-wrapper {
 		overflow: hidden;
+	}
+	.next-page {
+		display: none;
+	}
+	.previous-page {
+		display: none;
 	}
 
 	.pageTwo-text {
@@ -242,6 +237,14 @@ only screen and (                min-resolution: 2dppx) {
 		white-space: wrap;
 		h2 {
 			font-size: 1.2em;
+		}
+	}
+	.right-nav {
+		display: none;
+	}
+	.fullpage-wrapper {
+		&.loaded {
+			padding-right: 0; 
 		}
 	}
 
