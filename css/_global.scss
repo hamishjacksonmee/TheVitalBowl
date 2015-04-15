@@ -129,7 +129,6 @@ p {
 	cursor: pointer;
 	opacity: 0;
 	@include transform(translate(-200px,0));
-
 	@include trans(300ms);
 	@include border-box;
 
