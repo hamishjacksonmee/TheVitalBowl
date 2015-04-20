@@ -53,16 +53,17 @@ $(document).ready(function(){
 
 function startLoader() {
 
-    var loader = new PxLoader(), 
-        ImgOne = loader.addImage('img/page3-lrg.jpg'), 
-        ImgTwo = loader.addImage('img/page4-lrg.jpg');
-        ImgThree = loader.addImage('img/page5-1.jpg');
-        ImgFour = loader.addImage('img/page5-2.jpg');
+    var loader = new PxLoader(),
+        Img  = loader.addImage('http://itshamish.com/thevitalbowl/img/muesli-bg2.jpg'),
+        ImgEh = loader.addImage('http://itshamish.com/thevitalbowl/img/muesli-bg5.jpg'),
+        ImgOne = loader.addImage('http://itshamish.com/thevitalbowl/img/page3-lrg.jpg'), 
+        ImgTwo = loader.addImage('http://itshamish.com/thevitalbowl/img/page4-lrg.jpg');
+
      
     // callback that will be run once images are ready 
     loader.addCompletionListener(function() { 
 	    
-    	setTimeout(function() {
+    	//setTimeout(function() {
 	        $('.preloader').addClass('loaded');
             $('.inner-wrap').removeClass('hidden');
             $('.right-nav').removeClass('hidden');
@@ -82,7 +83,7 @@ function startLoader() {
 
 	    	console.log("loaded");
 
-    	}, 2500);
+    	//}, 2500);
         
     });
 
@@ -110,21 +111,6 @@ $(window).resize(function() {
     };
     
 });
-
-
-// ----- Entering Site
-
-// function enterSite() {
-
-// 	$('#wrapper').removeClass('hidden').addClass('entered');
-
-// 	$('.preloader').addClass('entered');
-
-// 	preloaderRemove();
-
-// 	console.log('entered');
-	
-// };
 
 
 function homeScrollDown() {
@@ -170,16 +156,21 @@ function fullPageInit() {
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
-        //recordHistory: true,
+        recordHistory: false,
+
+        loopHorizontal: true,
+        //slidesNavigation: true,
+        //slidesNavPosition: 'bottom',
+        //controlArrows: true,
 
         // //Design
         // controlArrows: true,
-        verticalCentered: true,
+        verticalCentered: true
         // resize : false,
         // //sectionsColor : ['#ccc', '#fff'],
         // paddingTop: '3em',
         // paddingBottom: '10px',
-        responsive: 480
+        //responsive: 720
 
     });
 

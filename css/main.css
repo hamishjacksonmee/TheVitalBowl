@@ -467,19 +467,31 @@ p {
   .next-page.active {
     opacity: 1; }
 
-.rule1 {
-  width: 10%;
-  height: 0.8em;
-  display: block;
-  background-color: black;
-  margin-left: 3%; }
+#pageOne {
+  background: #cecece;
+  background: url("http://itshamish.com/thevitalbowl/img/muesli-bg2.jpg") no-repeat center center;
+  background-size: cover; }
+
+.pageOne-text-wrap {
+  position: absolute;
+  height: 70%;
+  width: 90%;
+  left: 5%;
+  top: 15%;
+  display: table;
+  z-index: 9; }
 
 .pageOne-text {
   width: 100%;
-  padding: 3% 3% 3% 8%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  display: table-cell;
+  vertical-align: middle;
+  position: relative; }
+  .pageOne-text h2 {
+    padding: 5%;
+    color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
 .pageTwo-text {
   width: 80%;
@@ -514,6 +526,11 @@ p {
     background-color: black;
     margin-left: 1em; }
 
+#pageThree {
+  background: #cecece;
+  background: url("http://itshamish.com/thevitalbowl/img/muesli-bg5.jpg") no-repeat center center;
+  background-size: cover; }
+
 .pageThree-wrap {
   width: 100%;
   height: auto;
@@ -532,7 +549,10 @@ p {
   box-sizing: border-box; }
 
 .pageThree-text h2 {
-  margin-left: -40%; }
+  margin-left: -40%;
+  color: white; }
+.pageThree-text p {
+  color: white; }
 .pageThree-text .inset {
   padding-left: 1em;
   border-left: 2px #229eb2 solid;
@@ -544,7 +564,7 @@ p {
   left: 0;
   height: 100%;
   bottom: 0;
-  padding: 6em 2em 1em 4em;
+  padding: 6em 2em 2em 4em;
   z-index: 4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -553,7 +573,7 @@ p {
 .pageThree-img {
   background: url("http://itshamish.com/thevitalbowl/img/page3-lrg.jpg") no-repeat center center;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.8;
   width: 100%;
   height: 100%; }
 
@@ -575,6 +595,8 @@ p {
     .pageFour-text h2 span {
       white-space: nowrap;
       margin-left: -1%; }
+  .pageFour-text p {
+    padding-top: 1em; }
   .pageFour-text .icon {
     font-size: 3em; }
 
@@ -593,9 +615,13 @@ p {
 .pageFour-img {
   background: url("http://itshamish.com/thevitalbowl/img/page4-lrg.jpg") no-repeat center center;
   background-size: cover;
-  opacity: 0.7;
   width: 100%;
   height: 100%; }
+
+#pageFive {
+  background: #cecece;
+  background: url("http://itshamish.com/thevitalbowl/img/muesli-bg4.jpg") no-repeat center center;
+  background-size: cover; }
 
 .pageFive-wrap-one {
   position: absolute;
@@ -612,9 +638,11 @@ p {
     text-align: left;
     float: left; }
   .pageFive-wrap-one h2 {
-    left: -18%; }
+    left: -18%;
+    color: white; }
   .pageFive-wrap-one p {
-    padding-left: 0.2em; }
+    padding-left: 0.2em;
+    color: white; }
 
 .pageFive-wrap-two {
   position: absolute;
@@ -631,14 +659,16 @@ p {
     text-align: right;
     float: right; }
   .pageFive-wrap-two h2 {
-    right: -18%; }
+    right: -18%;
+    color: white; }
   .pageFive-wrap-two p {
-    padding-right: 0.2em; }
+    padding-right: 0.2em;
+    color: white; }
 
 .pageFive-img {
   width: 40%;
   height: 100%;
-  opacity: 0.7; }
+  opacity: 0.8; }
 
 .pageFive-text {
   width: 50%;
@@ -654,7 +684,7 @@ p {
     width: 100%;
     position: relative; }
   .pageFive-text p strong {
-    color: black; }
+    color: white; }
 
 .contact-text {
   position: absolute;
@@ -692,6 +722,8 @@ p {
   left: 0;
   width: 100%;
   text-align: center; }
+  .made-by a {
+    color: black; }
 
 .preloader {
   width: 100%;
@@ -1017,6 +1049,9 @@ p {
   h2 {
     font-size: 2em; }
 
+  .pageOne-text h2 {
+    font-size: 3em; }
+
   .rule1 {
     height: 0.4em; }
 
@@ -1061,16 +1096,13 @@ p {
   .fullpage-wrapper {
     overflow: hidden; }
 
-  .next-page {
-    display: none; }
-
-  .previous-page {
-    display: none; }
+  .pageOne-text h2 {
+    font-size: 2em; }
 
   .pageTwo-text {
     width: 100%;
     margin-left: 0;
-    padding: 3em 1em;
+    padding: 6em 1em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -1087,7 +1119,7 @@ p {
   .pageThree-text-wrap {
     position: relative;
     padding: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 6em;
     width: 100%;
     height: auto;
     margin-left: 0; }
@@ -1097,14 +1129,14 @@ p {
   .pageThree-img-wrap {
     position: relative;
     padding: 1em;
-    padding-top: 3em;
+    padding-top: 6em;
     width: 100%;
     height: 20em; }
 
   .pageFour-text-wrap {
     position: relative;
     padding: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 6em;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1121,13 +1153,14 @@ p {
   .pageFour-img-wrap {
     position: relative;
     padding: 1em;
-    padding-top: 3em;
+    padding-top: 6em;
     width: 100%;
     height: 20em; }
 
   .pageFive-wrap-one {
     position: relative;
     padding: 1em;
+    padding-top: 6em;
     width: 100%;
     height: auto;
     top: 0;
@@ -1138,6 +1171,7 @@ p {
   .pageFive-wrap-two {
     position: relative;
     padding: 1em;
+    padding-bottom: 6em;
     width: 100%;
     height: auto;
     bottom: 0;
@@ -1165,7 +1199,7 @@ p {
     white-space: wrap;
     position: relative;
     top: 0;
-    padding-top: 3em;
+    padding-top: 6em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -1190,14 +1224,11 @@ p {
   .contact-text {
     white-space: wrap; }
     .contact-text h2 {
-      font-size: 1.2em; }
-
-  .right-nav {
-    display: none; }
-
-  .fullpage-wrapper.loaded {
-    padding-right: 0; } }
+      font-size: 1.2em; } }
 @media only screen and (max-width: 340px) {
+  .fullpage-wrapper.loaded {
+    padding-right: 0; }
+
   .right-nav {
     display: none; }
 
